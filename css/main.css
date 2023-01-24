@@ -1380,6 +1380,99 @@ h3 {font-size: 14px;margin-bottom: 12px;}
 
 
 /* ====================================23 January, 2022===================================== */
+.accordion {
+    background: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px 0px;
+    width: 100%;
+    
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    position: relative;
+    line-height: 16px;
+    font-weight: 400;
+    color: #000;
+    overflow: visible;
+  }
+  
+  .accordion::after {
+    background: url('../img/blue.svg') no-repeat;display: block; 
+    width: 18px;
+    height: 11px;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    display: inline-block;
+    content: '';
+    transform: rotate(180deg);
+  }
+  .fw-600{    font-weight: 600;}
+  .accordion.active:after { transform: rotate(0deg); right: -8px; }
+  
+  .panel {
+    padding: 0px 0px;border-bottom: solid 1px #d8d8d8 !important;
+/*    background-color: #f2f7fd;*/
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    transition: all 0.3s ease;
+  }
+  .panel.mystyle{padding: 0px 0px 10px;font-size: 14px; line-height: 1.3;}
+/*  .faq-main {
+    border: solid 1px #d8d8d8;
+}*/
+.img-responsive{max-width: 100%;}
+/*.accordion.active:before { content: "";position: absolute; left: 0;width: 3px;height: 100%;background: #0095d9;top:0;}*/
+.panel{font-weight: normal;display: none;}
+.panel p{  font-size: 14px; line-height: 1.71; color: #222222; font-weight: normal;margin: 0;}
+.panel ul{
+    padding: 0;
+    /* list-style: inside; */
+    margin-left: 15px;
+    padding-left: 3px;
+    margin-bottom: 0;
+}
+.panel ul li {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #666666;
+    
+}
+.faq-main {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.panel ul li+li{margin-top: 10px;}
+.panel ul li span{font-weight: 600; color: #222;}
+.panel.autoHeight{display: block;padding-bottom: 10px;}
+@media (max-width:400px) {
+    .faq-part h2 {width: 80%;margin: 0 auto;}
+}
+@media (max-width: 767px){
+    .faq-main {
+    padding-left: 30px;
+    padding-right: 15px;
+}
+.panel.autoHeight{padding-bottom: 0;}
+    .faq-part h2 { font-size: 16px}
+    .faq-main .accordion, .online-app h2 { display: block !important;}
+    .accordion { padding: 16px 0px;
+    font-size: 14px;}
+    .panel ul li {
+    font-size: 12px;}
+    .panel.mystyle { padding: 0px 0px 10px;font-size: 12px;}
+.panel p {font-size: 12px;}
+.panel.autoHeight{display: none !important;}
+.panel.autoHeight.noheight{display: block !important;padding-bottom: 10px;}
+    }
+    .accordion, .accordion:focus {border-bottom: solid 1px #d8d8d8;}
+    .accordion.active {border-bottom: 1px solid transparent;}
+    h3.accordion {margin: 0;}
 .cpp-wrapper h1 {
     font-size: 40px;
     font-weight: 600;
@@ -1602,6 +1695,10 @@ h3 {font-size: 14px;margin-bottom: 12px;}
     font-size: 20px !important;
   }
 
+  .text-md.sm {
+    font-size: 16px !important;
+  }
+
   .fw-bold {
     font-weight: bold !important;
   }
@@ -1632,12 +1729,39 @@ h3 {font-size: 14px;margin-bottom: 12px;}
     margin-top: 20px !important;
 }
 
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.pt-30 {
+    padding-top: 30px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
 .mt-50 {
     margin-top: 50px !important;
 }
 
 .black-text {
     color: #333333 !important;
+}
+
+.gray-text,
+h3.card-title,
+.card-block p,
+.home-radio-buttons + .text-sm.my-15.fw-normal {
+    color: #666666 !important;
+}
+
+.blue-text {
+    color: #0095da !important;
 }
 
 .text-right {
@@ -1691,6 +1815,152 @@ h3 {font-size: 14px;margin-bottom: 12px;}
     margin-right: 10px;
 }
 
+.card-wrapp {
+    display: flex;
+    justify-content: center;
+}
+
+.card-block {
+    width: 18%;
+    border: 5px solid #EBEBEB;
+    padding: 40px 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.card-block:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.card-image {
+    margin-bottom: 15px;
+}
+
+.card-image img {
+    width: 70px;
+}
+
+h3.card-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.card-block p {
+    font-weight: normal;
+    margin-bottom: 35px;
+    min-height: 71px;
+}
+
+.lern-more {
+    font-weight: 500;
+}
+
+.card-block p,
+.lern-more {
+    font-size: 13px;
+}
+
+.lern-more span {
+    font-size: 10px;
+}
+
+.blue-btn {
+    box-sizing: border-box;
+}
+
+.accordion::before {
+    background: url(../img/tick-mark.svg) no-repeat;
+    display: block;
+    width: 16px;
+    height: 13px;
+    position: absolute;
+    top: 18px;
+    left: -23px;
+    display: inline-block;
+    content: '';
+}
+
+.border-line {
+    margin-top: 40px;
+    padding-top: 50px;
+    border-top: 1px solid #dddddd;
+}
+
+.table-wrapp table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-wrapp {
+    border: 1px solid #0096DB;
+}
+
+.table-wrapp th, 
+.table-wrapp td {
+    border: 1px solid #DDDDDD;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+
+  .table-dark-color {
+    background-color: #CCEFFF;
+}
+
+.table-wrapp th {
+    font-size: 16px;
+}
+
+.table-wrapp td {
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  .with-nested-table {
+    padding: 0 !important;
+  }
+
+  .with-nested-table tr:nth-child(1) td {
+    border-top: 0;
+  }
+
+  .with-nested-table tr:nth-last-child(1) td {
+    border-bottom: 0;
+  }
+
+  .with-nested-table tr td {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .big-w-wrapp {
+    width: 82%;
+    margin: 0 auto;
+}
+
+.gray-bg-table {
+    background-color: #fafafa !important;
+}
+
+.row-dark-color-bottom {
+    background-color: #0095d9;
+    color: #ffffff;
+}
+
+.radio-wrap.white-radio span {
+    border: 1px solid #0098da;
+}
+
+.table-bottom-cnt {
+    margin-top: 20px;
+}
+
+.table-bottom-cnt div {
+    margin-bottom: 3px;
+}
+
+ 
+
 
 
 
@@ -1704,6 +1974,13 @@ h3 {font-size: 14px;margin-bottom: 12px;}
 
 @media(max-width: 767px) {
     .checkbox-group .radio-wrap {width: 100%;}
+    .card-block {width: 100%; min-width: 72%;}
+    .card-wrapp {justify-content: start;overflow-x: auto; overflow-y: auto;}
+    .no-scrollbar::-webkit-scrollbar {display: none;}
+    .card-block p {width: 70%; margin: 0 auto;}
+    .home-input-block {flex-wrap: wrap;}
+    .home-input-block div {width: 100% !important; margin-right: 0; margin-bottom: 10px;}
+    .home-input-block div input {width: 100%;}
 }
 
 

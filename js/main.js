@@ -60,3 +60,37 @@ $('.radio-wrap-lg').click(function () {
     $('.radio-wrap-lg').removeClass('active');
     $(this).addClass('active');
 });
+
+if ($(window).width() > 768) {
+    $(document).ready(function(){
+        $(".accordion").click(function(){
+           // alert("m;lm")
+        //    $(".accordion").removeClass("active");
+           $(this).toggleClass("active");
+    //       $(".accordion").next(".panel").css("max-height", "0");
+    //       $(this).next(".panel").css("max-height", "100%");
+          // $(".accordion").next(".panel").removeClass("autoHeight");
+           $(this).next(".panel").toggleClass("autoHeight");
+        });
+    });
+    }
+    if ($(window).width() < 767) {
+        $(document).ready(function(){
+            $(".accordion").click(function(){
+            
+                var myClass = $(this).attr("class").split(' ')[1];
+                
+                if(myClass == 'active'){
+                  $(".accordion").removeClass("active");
+                }else{
+                    $(".accordion").next(".panel").removeClass("autoHeight");
+                    $(".accordion").next(".panel").removeClass("noheight");
+                    $(".accordion").removeClass("active");
+                    $(this).toggleClass("active");   
+                }
+                
+                $(this).next(".panel").toggleClass("autoHeight");
+                $(this).next(".panel").toggleClass("noheight");
+            });
+    });
+    }

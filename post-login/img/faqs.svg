@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_81" data-name="Rectangle 81" width="40.5" height="47.25" fill="#474747"/>
+    </clipPath>
+  </defs>
+  <g id="Group_563" data-name="Group 563" transform="translate(-706 -1035)">
+    <g id="Ellipse_46" data-name="Ellipse 46" transform="translate(706 1035)" fill="#fff" stroke="#474747" stroke-width="5">
+      <circle cx="50" cy="50" r="50" stroke="none"/>
+      <circle cx="50" cy="50" r="47.5" fill="none"/>
+    </g>
+    <g id="Group_374" data-name="Group 374" transform="translate(735.5 1063.066)">
+      <g id="Group_225" data-name="Group 225" clip-path="url(#clip-path)">
+        <path id="Path_164" data-name="Path 164" d="M36,0H4.5A4.513,4.513,0,0,0,0,4.5V36a4.513,4.513,0,0,0,4.5,4.5h9l6.75,6.75L27,40.5h9A4.513,4.513,0,0,0,40.5,36V4.5A4.513,4.513,0,0,0,36,0M22.5,36H18V31.5h4.5Zm4.725-17.325L25.2,20.7c-1.8,1.575-2.7,2.925-2.7,6.3H18V25.875a8.17,8.17,0,0,1,2.7-6.3l2.7-2.925a3.776,3.776,0,0,0,1.35-3.15,4.5,4.5,0,1,0-9,0h-4.5a9,9,0,1,1,18,0,8.193,8.193,0,0,1-2.025,5.175" transform="translate(0 0)" fill="#474747" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>
