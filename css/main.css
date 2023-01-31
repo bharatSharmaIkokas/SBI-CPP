@@ -1901,10 +1901,11 @@ h3.card-title {
     border: 1px solid #DDDDDD;
     border-collapse: collapse;
     padding: 10px;
+    color: #333333;
   }
 
   .table-dark-color {
-    background-color: #CCEFFF;
+    background-color: #CCEFFF !important;
 }
 
 .table-wrapp th {
@@ -1939,11 +1940,11 @@ h3.card-title {
 }
 
 .gray-bg-table {
-    background-color: #fafafa !important;
+    background-color: #dddddd !important;
 }
 
 .row-dark-color-bottom {
-    background-color: #0095d9;
+    background-color: #0095d9 !important;
     color: #ffffff;
 }
 
@@ -1957,6 +1958,15 @@ h3.card-title {
 
 .table-bottom-cnt div {
     margin-bottom: 3px;
+    color: #333333;
+}
+
+table tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.br-1 {
+    border-right: 1px solid #dddddd !important;
 }
 
  
@@ -1973,7 +1983,8 @@ h3.card-title {
 }
 
 @media(max-width: 767px) {
-    .checkbox-group .radio-wrap {width: 100%;}
+    .checkbox-group .radio-wrap {width: 100%; margin-right: 3px;}
+    .checkbox-group .radio-wrap:nth-last-child(1) {margin-right: 0;}
     .card-block {width: 100%; min-width: 72%;}
     .card-wrapp {justify-content: start;overflow-x: auto; overflow-y: auto;}
     .no-scrollbar::-webkit-scrollbar {display: none;}
@@ -1981,6 +1992,44 @@ h3.card-title {
     .home-input-block {flex-wrap: wrap;}
     .home-input-block div {width: 100% !important; margin-right: 0; margin-bottom: 10px;}
     .home-input-block div input {width: 100%;}
+    .cpp-wrapper h1 {font-size: 38px;}
+    .cpp-wrapper h1 br {display: none;}
+    .cpp-title {display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;}
+    .cpp-title .text-sm.my-10.text-right.fw-normal {margin: 0 !important;}
+    .cpp-wrapper h2 {font-size: 18px !important; text-align: left;}
+    .checkbox-group {flex-wrap: nowrap;}
+    .radio-label-block {flex-wrap: wrap; order: 1; padding: 5px 0 15px 0; width: 100%;}
+    .radio-label-block div:nth-child(1) {font-size: 12px; width: 100%; text-align: center;}
+    .radio-label-block div:nth-child(2) {font-size: 16px; width: 100%; text-align: center;}
+    .checkbox-group .fancy-radio {flex-wrap: wrap; justify-content: center;}
+    .checkbox-group .radio-wrap span {order: 2; margin: 0; margin-bottom: 15px;}
+    .home-input-block {width: 100%;}
+    .home-input-block .blue-btn {width: auto !important;}
+    .mt-50 {margin-top: 25px !important;}
+    .border-line {margin-top: 20px; padding-top: 35px;}
+    .mt-30 {margin-top: 15px !important;}
+    .big-w-wrapp {width: 100%; padding-left: 10px; padding-right: 10px; box-sizing: border-box;}
+    .home-radio-buttons + .text-sm.my-15.fw-normal + .text-center {text-align: left;}
+    .accordion::before {display: none;}
+    .faq-main {padding-left: 0; padding-right: 0;}
+    .plan-details-accordian .accordion.active {background-color: #CCEFFF; padding: 16px 5px;}
+    .plan-details-accordian tr {background-color: #F2F9FC !important;}
+    .big-w-wrapp * {box-sizing: border-box;}
+    .plan-details-accordian .table-wrapp th, 
+    .plan-details-accordian .table-wrapp td {
+        padding: 5px;
+        font-size: 11px;
+    }
+
+    .table-wrapp {overflow-x: auto; overflow-y: hidden; width: 100%;}
+    .accordion:after {right: 5px !important;}
+    .table-wrapp {border: 0;}
+    .plan-details-accordian .gray-bg-table {background-color: #dddddd !important;}
+    .plan-details-accordian .accordion.active + .panel {border-bottom: 0 !important;}
 }
+
+@media(min-width: 767px) and (max-width: 991px) {
+    .checkbox-group .radio-wrap {margin-bottom: 10px;}
+  }
 
 
