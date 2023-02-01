@@ -1330,8 +1330,16 @@
     </section>
     <section class="cpp-wrapper">
         <div class="cpp-banner-wrapp">
-            <div class="owl-carousel home-carousel">
+            <div class="">
                 <div class="cpp-banner">
+                    <div class="container position-relative">
+                        <div class="banner-cnt">
+                            <img src="../img/banner-icon-1.png" alt="">
+                            <h1>Protect Yourself before <br> its too late</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="cpp-banner">
                     <div class="container position-relative">
                         <div class="banner-cnt">
                             <img src="../img/banner-icon-1.png" alt="">
@@ -1346,15 +1354,7 @@
                             <h1>Protect Yourself before <br> its too late</h1>
                         </div>
                     </div>
-                </div>
-                <div class="cpp-banner">
-                    <div class="container position-relative">
-                        <div class="banner-cnt">
-                            <img src="../img/banner-icon-1.png" alt="">
-                            <h1>Protect Yourself before <br> its too late</h1>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
             <div class="bred-crumb mt-0">
                 <div class="container">
@@ -1396,22 +1396,38 @@
                         </label>
                     </div>
                 </div>
-                <div class="text-sm my-15 fw-normal">Yes, I agree to buy CPP Card Protection (as per the price mentioned above) and pay the membership fee using my SBI Card.. <a href="#">read more</a></div>
+                <div class="text-sm my-15 fw-normal">Yes, I agree to buy CPP Card Protection (as per the price mentioned above) and pay the membership fee using my SBI Card <span class="more-text fw-normal">and pay the membership fee using my SBI Card</span> ..  <a href="javascript:void(0);" class="read-more">read more</a></div>
                 <div class="text-center">
                     <a href="login-page.html" class="blue-btn mb-0">Sign In To Buy</a>
                 </div>
                 <h2 class="fw-medium text-center mt-50">To request for a call back, please fill simple detail below</h2>
+                <form id="plan_genrate_otp">
                 <div class="home-input-block mt-20">
-                    <div>
-                        <input type="text" class="form-control" placeholder="Name*">
-                    </div>
-                    <div>
-                        <input type="text" class="form-control" placeholder="Mobile Number*">
-                    </div>
-                    <div>
-                        <a href="#" class="blue-btn mb-0 mt-0 w-100">Call Back</a>
-                    </div>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Name*" required>
+                        </div>
+                        <div>
+                            <input type="number" class="form-control" placeholder="Mobile Number*" required>
+                        </div>
+                        <div>
+                            <a href="javascript:void(0);" class="blue-btn mb-0 mt-0 w-100 gray-btn pln-genrate-otp">Generate OTP</a>
+                        </div>
+                        <div class="otp-type-block">
+                            <div class="otp-type-lable">
+                                OTP has been sent to your mobile Number.
+                            </div>
+                            <div class="otp-type-label-sm">Please enter the five-digit code that you have received in the SMS sent to the mobile number that you have provided.</div>
+                            <div class="otp-type-input valid-field">
+                                <input type="password" class="form-control" value="12345">
+                                <label for="encashAccNo" class="valid"></label>
+                            </div>
+                            <div class="otp-type-submit">
+                                <a href="javascript:void(0);" class="blue-btn mb-0 gen-otp">Submit</a>
+                            </div>
+                        </div>
                 </div>
+                
+            </form>
                 
             </div>
             <div class="big-w-wrapp">
@@ -1452,6 +1468,23 @@
             </div>
         </div>
     </section>
+    <div class="popup-wrapp">
+        <div class="popup-inner sm">
+            <div class="popup-center text-center">
+                <div class="popup-text">
+                    We will contact you shortly. <br>
+    Your SeqNum: 1005010953
+                </div>
+                <div class="popup-btn">
+                    <a href="javascript:void(0);" class="popup-button button-blue modal-close">Cancel</a>
+                </div>
+            </div>
+            
+            <a href="javascript:void(0);" class="close modal-close"></a>
+
+        </div>
+        <div class="overlay"></div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/jquery.magnific-popup.min.js"></script>

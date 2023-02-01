@@ -94,3 +94,49 @@ if ($(window).width() > 768) {
             });
     });
     }
+
+
+    $('.pln-genrate-otp').click(function () {
+        $('.otp-type-block').show();
+    });
+
+    $('.gen-otp').click(function () {
+        $('.popup-wrapp').show();
+    });
+
+    $('.modal-close').click(function () {
+        $('.popup-wrapp').hide();
+    });
+
+    // Show more and Less more
+$('.read-more').click(function() {
+    $(this).prev('.more-text').toggle();
+     $(this).parent('p').toggleClass('opened');
+    if ($(this).text() == "read more") {
+      $(this).text("read less")
+    } else {
+      $(this).text("read more")
+    }
+  
+  
+    $(this).attr("type","current");
+    var current = this;
+  
+    $(".read-more").each(function() {
+      var ele = this;
+      if(!ele.type){
+      if ($(this).text() == "read less") {
+        $(this).prev('.more-text').toggle();
+     $(this).parent('p').toggleClass('opened');
+    if ($(this).text() == "read more") {
+      $(this).text("read less")
+    } else {
+      $(this).text("read more")
+    }
+      }
+    }
+      
+    });
+  
+    $(current).attr("type","");
+  });
